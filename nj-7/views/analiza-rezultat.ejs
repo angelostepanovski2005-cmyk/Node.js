@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <title>Резултати од Анализа</title>
+</head>
+<body>
+    <h2>Резултати од анализата:</h2>
+    
+    <ul>
+        <li><strong>Вкупен број на карактери:</strong> <%= vkupnoKarakteri %></li>
+        <li><strong>Вкупен број на зборови:</strong> <%= vkupnoZborovi %></li>
+        <li><strong>Вкупен број на зборови помали од 5 карактери:</strong> <%= pomaliOd5 %></li>
+        <li><strong>Вкупен број на zборови поголеми од 5 карактери:</strong> <%= pogolemiOd5 %></li>
+        <li><strong>Вкупен број на зборови еднакви на 5 карактери:</strong> <%= ednakviNa5 %></li>
+        <li><strong>Вкупен број на параграфи:</strong> <%= vkupnoParagrafi %></li>
+        <li><strong>БОНУС (Зборови што почнуваат на a, o, u, i, e):</strong> <%= pocнуваНаСамогласка %></li>
+    </ul>
+
+    <h3>Оригинален текст:</h3>
+    <blockquote style="background: #f4f4f4; padding: 10px; border-left: 5px solid #ccc;">
+        <%= vnesenTekst %>
+    </blockquote>
+
+    <br>
+    <a href="/analiza">Анализирај нов текст</a>
+</body>
+</html>
